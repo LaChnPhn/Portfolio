@@ -37,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: width 0.5s;
+    transition: width 0.5s, left 0.5s;
 }
 
 .navigation.active {
