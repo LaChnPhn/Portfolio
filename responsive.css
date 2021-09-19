@@ -1,4 +1,7 @@
 @media (max-width: 992px) {
+    .themeSwitch {
+        left: 20px;
+    }
     .navigation {
         left: -100%;
     }
