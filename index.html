@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <a href="#" class="logo">Portfolio</a>
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <!-- Banner -->
+        <section class="banner" id="banner">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/user.jpg" />
+            </div>
+            <h3>Lai Chấn Phong</h3>
+            <p>I'm a Front End Web Developer.</p>
+            <a href="CV/index.html" class="btn">Download My CV</a>
+            <ul class="socialMedia">
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about adjust" id="about">
+          <div class="title">
+            <h2>About Me</h2>
+          </div>
+          <div class="content">
+            <div class="textBox">
+              <p>
+                I am a fresh graduate. I ave a passion for web development. I
+                can study well on my own and work hard.<br />
+                I will try my best to complete all assigned tasks.<br />
+                Apply knowledge to create many beautiful, stunning websites that
+                could bring benefits to customers and company.<br />
+                Eager to learn new things to keep up to date.
+              </p>
+            </div>
+            <div class="imgBx">
+              <img src="images/bg1.jpg" />
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Services -->
+
+
+        <section class="services adjust" id="services">
+            <div class="title">
+                <h2>Our Services</h2>
+                <p>Some services that I can help you with</p>
+            </div>
+            <div class="content">
+                <div class="serviceBox">
+                    <img src="images/icon1.png">
+                    <h2>Web Design</h2>
+                    <p>I can use HTML, CSS and JS. But with a small amount of experience, hope to be able to help you ^^!<br><br> thank you </p>
+                </div>
+                <div class="serviceBox">
+                    <img src="images/icon2.png">
+                    <h2>Photography</h2>
+                    <p>I know a little about Photoshop and canva.com. I hope I can help you when you need it.</p>
+                </div>
+                <div class="serviceBox">
+                    <img src="images/icon3.png">
+                    <h2>Video Editing</h2>
+                    <p>I used to teach myself how to edit videos, but I'm not very good, but I have a little ability to work with video.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        
+        <section class="project adjust" id="project">
+            <div class="title">
+                <h2>Recent Work</h2>
+                <p>My recent projects </p>
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="images/img2.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://lachnphn.github.io/CPcloneW3.github.io/">Move to my Project1</a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="images/img3.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://lachnphn.github.io/JolliByCP1/">Move to my Project2</a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="images/img8.jpg">
+                    </div>
+                    <div class="textBx">
+                        <a href="https://lachnphn.github.io/CPShopeeClone.github.io/">Move to my Project3</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact adjust" id="contact">
+            <div class="title">
+                <h2>Let's Say Hi</h2>
+                <p></p>
+            </div>
+            <div class="contactForm">
+                <div class="row">
+                    <input type="text" name="" placeholder="First Name">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+                <div class="row">
+                    <input type="mail" name="" placeholder="Email Address">
+                    <input type="text" name="" placeholder="Mobile No.">
+                </div>
+                <div class="row2">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="row2">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </section>
+        
+      </div>
+    </div>
+
+    <script>
+      let toggle = document.querySelector(".toggle");
+      let topbar = document.querySelector(".topbar");
+      let navigation = document.querySelector(".navigation");
+      let main = document.querySelector(".main");
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        topbar.classList.toggle("active");
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
